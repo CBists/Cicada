@@ -7,6 +7,7 @@ import java.sql.Statement
 
 @RestController
 @RequestMapping("/api/")
+@CrossOrigin(origins = ["*"])
 class CommonController {
 
     lateinit var statement: Statement
