@@ -51,7 +51,7 @@ class CommonController {
                 ResponseEntity.ok("А вот думай че за дата")
             }
         } else {
-            ResponseEntity.ok("Лох")
+            ResponseEntity.ok("За каждую ошибку 1 спойлер по дандадан")
         }
 
     @GetMapping("task2/check")
@@ -66,9 +66,9 @@ class CommonController {
             if (res.next())
                 return ResponseEntity.ok("ты смог войти в аккаунт. 2 - b3d74eea97bfb75c")
             else
-                return ResponseEntity.ok("Лох")
+                return ResponseEntity.ok("Ну ты мыслишь правильно")
         } else {
-            return ResponseEntity.ok("Лох")
+            return ResponseEntity.ok("Гойда, он ошибся")
         }
     }
 }
