@@ -31,7 +31,7 @@ class CommonController {
         @RequestParam answer4: String
     ): ResponseEntity<String?> =
         if (answer1 == "1ca383cd1ee7f63a" && answer2 == "b3d74eea97bfb75c" && answer3 == "26fe1629f0d72bc0" && answer4 == "c29738ef01d2060a") {
-            ResponseEntity.ok("Окак, он смог")
+            ResponseEntity.ok("Окак, он смог (ответ прямиком с бекенда)")
         } else {
             ResponseEntity.ok("Лох")
         }
@@ -44,7 +44,7 @@ class CommonController {
     ): ResponseEntity<String?> =
         if (name == "Андрей" && lName == "Толченов") {
             if (date == "01.07.2023") {
-                ResponseEntity.ok("Окак, он смог. 4 - c29738ef01d2060a")
+                ResponseEntity.ok("4 - c29738ef01d2060a")
             } else if (date == "21.05.2003") {
                 ResponseEntity.ok("Обязательно твое др")
             } else {
@@ -64,7 +64,7 @@ class CommonController {
         if (result) {
             var res = statement.resultSet
             if (res.next())
-                return ResponseEntity.ok("Хорош, ты смог войти в аккаунт. 2 - b3d74eea97bfb75c")
+                return ResponseEntity.ok("ты смог войти в аккаунт. 2 - b3d74eea97bfb75c")
             else
                 return ResponseEntity.ok("Лох")
         } else {
